@@ -28,7 +28,7 @@ p{
 .list {
     color: #000;
     font-weight: normal;
-    font-size: normal;
+    font-size: 16px;
 }
 
 .imagelist{
@@ -37,6 +37,11 @@ p{
 
 a:link{
     color:#c38b5c;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 a:active {
