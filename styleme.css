@@ -29,6 +29,15 @@ p{
     color: #000;
     font-weight: normal;
     font-size: 16px;
+    
+}
+
+#movie{
+    transform: rotate(180deg);
+    }
+
+#movie>li{
+    transform: rotate(-180deg);
 }
 
 .imagelist{
@@ -50,6 +59,16 @@ a:active {
 
 a:visited{
     color: #194d19;
+}
+
+#moviedetail>li{
+    list-style: none;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+#moviedetail>p{
+    padding-left: 5%;
 }
 
 footer{
