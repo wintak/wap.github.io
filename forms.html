@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Learn CSS forms" />
+    <meta name="keywords" content="HTML,CSS" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link href="formstyle.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h2>Workshop Registration   <span>      More Actions </span></h2>
+        
+    <div class="container">
+        <div class="side1">
+            <p>Register now while seats are available!</p>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="prop">First Name</div>
+                    <div class="input">
+                        <input type="text" name="firstname" size="18" pattern="[a-zA-Z]" title="Must Be A Letter [a-zA-z]">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="prop">Last Name</div>
+                    <div class="input">
+                        <input type="text" name="lastname" size="18" pattern="^[a-zA-Z]" title="Must Be A Letter [a-zA-z]">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="prop">Company/Institution</div>
+                    <div class="input">
+                        <input type="text" name="company" size="18" pattern="^[a-zA-Z0-9]"title="Must Be A Commbination of [a-zA-z][0-9]">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="prop">Address</div>
+                    <div class="input">
+                        <textarea rows="4" cols="18" pattern="^[a-zA-Z0-9]"title="Must Be A Commbination of [a-zA-z][0-9]"></textarea>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="prop">City</div>
+                    <div class="input">
+                        <input type="text" name="city" size="18">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="prop">State/Province/Region</div>
+                    <div class="input">
+                        <select name="state">
+                            <option selected>-select-</option>
+                            <option>VA</option>
+                            <option>IL</option>
+                            <option>NY</option>
+                            <option>CA</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="prop">Country</div>
+                    <div class="input">
+                        <select>
+                            <option selected>-select-</option>
+                            <option>Ethiopia</option>
+                            <option>Jamaica</option>
+                            <option>USA</option>
+                            <option>Brazil</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="prop">Email</div>
+                    <div class="input">
+                        <input type="text" name="email" size="18" pattern="[a-z0-9._]+@[a-z0-9]+\.[a-zA-Z]{2,3}" title="Correct Email Format">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="prop">Phone Number</div>
+                    <div class="input">
+                        <input type="text" name="phone" size="18" pattern="/d{10}" title="Must Be 10 Digit">
+                    </div>
+                </div>
+
+                
+                 
+        </form>
+    </div>
+
+    <div class="side2">
+        <p>Lunch</p>
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <div class="row">
+                <div class="prop">Meal Preference</div>
+                <div class="input">
+                    <select>
+                <option>Vegeterian</option>
+                <option>Vegan</option>
+                <option>Mixed</option>
+            </select>
+                </div>
+            </div>
+        
+            <p>Payment Details</p>
+
+            <div class="row">
+                <div class="prop">Payment Mode</div>
+                <div class="input">
+                    <input type="checkbox" name="cash"> Cash <br>
+                    <input type="checkbox" name="cheque"> Cheque <br>
+                    <input type="checkbox" name="demanddraft"> Demand Draft
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="prop">DD/Cheque No.</div>
+                <div class="input">
+                    <input type="text" name="chequenumber" size="18">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="prop">Drawn On(Bank Name)</div>
+                <div class="input">
+                    <input type="text" name="bankname" size="16">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="prop">Payable at</div>
+                <div class="input">
+                    <input type="text" name="payable" size="16">
+                </div>
+            </div>
+         
+        </form>
+    </div> 
+</div>
+    
+    <div class="button">
+        <form>
+            <input type="submit" value="Submit" class="submit">
+            <input type="reset" value="Reset" class="reset"> 
+        </form>
+    </div>
+
+</body>
+</html>
