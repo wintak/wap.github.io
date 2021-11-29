@@ -12,48 +12,49 @@ h2{
 }
 
 .container{
+    
     display: grid;
     justify-content: center;
-   
-   
-   
-    
-    grid-template-columns: 200px 20px 200px;
-    grid-template-rows: auto;
-    grid-template-areas: "one . two"
-                         "three . four";
-    align-content: space-around;
-    height: 200px;
-    
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding-top: 200px;
+    grid-auto-rows: 200px;
+    justify-items:stretch;
+    width: 50%;
+    margin: auto;
+      
 }
 
 .container>div{
-    width: 150px;
-    margin: auto;
+  
     text-align: center;
     border-radius: 4px;
     font-weight: bold;
+    padding-top: 30px;
     
 }
 
+.container>div:hover{
+    border: rgba(20, 20, 20, 0.884) 2px solid;
+}
 
 
 .one {
-    grid-area: one; 
+    
     background-color: rgba(255, 102, 0, 0.342);
 }
 
 .two {
-    grid-area: two; 
+    
     background-color: rgba(47, 213, 255, 0.493);
 }
 
 .three{
-    grid-area: three; 
+    
     background-color: rgba(165, 115, 8, 0.459);
 }
 
 .four{
-    grid-area: four; 
-    background-color: rgb(233, 232, 232);
+    
+    background-color: rgba(211, 202, 197, 0.781);
 }
